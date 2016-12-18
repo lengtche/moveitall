@@ -1,0 +1,24 @@
+directory: c:\dev\beetsplug\target
+library: c:\dev\beetsplug\library.blb # where db index will be stored
+
+pluginpath: c:\dev\beetsplug
+plugins: plugin
+
+clutter: ['.nfo', '.jpg', '.jpeg']
+
+import:
+    copy: yes
+    write: yes
+    resume: ask
+    quiet_fallback: skip
+    timid: no
+    log: c:\dev\beetsplug\beets.log
+threaded: yes
+ui:
+    color: yes
+
+paths:
+    default: $albumartist - $album $year/$track $title
+    singleton: Singletons/$artist - $title
+    comp: $genre/$album/$track $title
+    albumtype:soundtrack: Soundtracks/$album/$track $title
