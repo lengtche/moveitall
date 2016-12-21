@@ -2,7 +2,7 @@ directory: c:\dev\beetsplug\target
 library: c:\dev\beetsplug\library.blb # where db index will be stored
 
 pluginpath: c:\dev\beetsplug
-plugins: plugin
+plugins: albumquality
 
 clutter: ['.nfo', '.jpg', '.jpeg']
 
@@ -18,7 +18,7 @@ ui:
     color: yes
 
 paths:
-    default: $albumartist - $album $year/$track $title
+    default: $albumartist - $album [$quality]/$track $title
     singleton: Singletons/$artist - $title
     comp: $genre/$album/$track $title
     albumtype:soundtrack: Soundtracks/$album/$track $title

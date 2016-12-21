@@ -2,3 +2,4 @@ from
 target
 *.pyc
 beets.log
+*.blb
